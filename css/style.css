@@ -1,0 +1,245 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* landing page begin */
+.landing-section {
+    width: 35%;
+    background-color: #062ea7ee;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, #0047AB 35px, #0047AB 75px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-minor {
+    width: 80%;
+    text-align: left;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: .5rem;
+    letter-spacing: 2px;
+}
+
+.logo-minor span {
+    color: rgb(63, 152, 235);
+}
+
+.greetings {
+    width: 50%;
+    z-index: 100;
+
+}
+
+.greetings h4 {
+    color: rgb(63, 152, 235);
+    letter-spacing: 3px;
+}
+
+.greetings h3 {
+    color: whitesmoke;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    margin: -.5rem 0;
+    white-space: nowrap;
+}
+
+.greetings p {
+    color: whitesmoke;
+    margin-bottom: -.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.greetings button {
+    background: none;
+    border: solid 1px whitesmoke;
+    padding: .5rem;
+    color: whitesmoke;
+    width: 50%;
+    margin-top: 1.9rem;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.greetings button:hover, .social-icon i:hover{
+    transform: scale(1.1);
+}
+
+.social-icon {
+    padding: 2rem;
+    word-spacing: 1rem;
+    outline: none;
+}
+
+.social-icon i {
+    border: solid 1px whitesmoke;
+    padding: .5rem;
+    color: whitesmoke;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: 1s ease-in-out;
+}
+
+/* end of landing page */
+
+/* avatar section begin */
+
+.avatar-about-section {
+    width: 60%;
+}
+
+.avatar-container img {
+    width: 100%;
+    height: 75vh;
+}
+
+.about-container {
+    padding: 1.5rem;
+}
+
+.about-container a {
+    outline: none;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #36454F;
+    font-size: .7rem;
+    padding: .7rem;
+    transition: 1s ease-in-out;
+}
+
+.about-container a:hover {
+    background-color: rgb(34, 33, 33);
+}
+
+/* avatar section end */
+
+/* side nav begin */
+nav {
+    width: 5%;
+    background-color:  #36454F;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-icon i {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+ul {
+    width: 100%;
+    margin-right: auto;
+}
+
+ul a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.1rem;
+}
+
+ul li {
+    margin-right: 3.8rem;
+}
+
+ul li {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    list-style: none;
+    padding: 1rem 0;
+}
+/* end of side nav */
+
+.avatar-about-section-mobile {
+    display: none;
+}
+
+
+/* media query */
+@media screen and (max-width: 900px) {
+    .wrapper {
+        flex-direction: column-reverse;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: row !important;
+        padding: 1rem;
+    }
+
+    .nav-icon i {
+        margin: auto;
+        margin-left: 3rem;
+    }
+
+    ul {
+        display: none;
+    }
+/* 
+    ul li {
+        writing-mode: horizontal-tb;
+        margin: auto !important;
+        padding: auto !important;
+    }
+
+    ul li a {
+        font-size: .9rem !important;
+    } */
+
+    .avatar-about-section{
+        display: none;
+    }
+
+    .landing-section {
+        width: 100%;
+    }
+
+    .greetings {
+        width: 100%;
+        margin: auto;
+        text-align: center !important;
+    }
+
+    .greetings h3 {
+        white-space: normal;
+        font-size: 3rem !important;
+    }
+
+    .social-icon {
+        padding: 2rem .5rem;
+    }
+
+    .social-icon i {
+        padding: .2rem;
+    }
+
+    .avatar-about-section-mobile {
+        display: block !important;
+        width: 100%;
+    }
+
+    .avatar-container img {
+        height: auto !important;
+    }
+
+}
