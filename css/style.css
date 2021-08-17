@@ -52,8 +52,8 @@ body {
 .greetings h3 {
     color: whitesmoke;
     font-size: 3.5rem;
-    letter-spacing: 3px;
-    word-spacing: 5px;
+    letter-spacing: 8px;
+    word-spacing: 6px;
     margin: -.5rem 0;
     white-space: nowrap;
 }
@@ -63,6 +63,8 @@ body {
     margin-bottom: -.5rem;
     font-weight: bold;
     white-space: nowrap;
+    letter-spacing: 4px;
+    word-spacing: 3px;
 }
 
 .greetings button {
@@ -93,6 +95,17 @@ body {
     border-radius: 50%;
     font-size: 1rem;
     transition: 1s ease-in-out;
+}
+
+.sponsors {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sponsors img{
+    height: 90%;
+    width: 90%;
 }
 
 /* end of landing page */
