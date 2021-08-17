@@ -195,16 +195,6 @@ ul li {
     ul {
         display: none;
     }
-/* 
-    ul li {
-        writing-mode: horizontal-tb;
-        margin: auto !important;
-        padding: auto !important;
-    }
-
-    ul li a {
-        font-size: .9rem !important;
-    } */
 
     .avatar-about-section{
         display: none;
